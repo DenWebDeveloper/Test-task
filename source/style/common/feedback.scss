@@ -1,0 +1,142 @@
+.feedback {
+  margin-top: 140px;
+  padding-top: 42px;
+  padding-bottom: 73px;
+  background: #6889a4 url(../img/feedback-bg.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.feedback__wrapper {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+
+  @include media(660px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.contacts {
+  margin-right: 20px;
+  max-width: 396px;
+
+  @include media(660px) {
+    max-width: 100%;
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+}
+
+.contacts__phone,
+.contacts__email {
+  display: block;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: 700;
+  }
+}
+
+.contacts__fa-phone {
+  transform: rotate(91deg);
+}
+
+.contacts__fa-phone,
+.contacts__fa-email {
+  margin-right: 10px;
+}
+
+.contacts__email {
+  margin-bottom: 29px;
+}
+
+.contacts__paragraph {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.contacts__map {
+  width: 100%;
+  max-width: 378px;
+  min-height: 205px;
+
+  @include media(660px) {
+    max-width: 100%;
+    min-height: 355px;
+  }
+}
+
+.write-me {
+  width: 58%;
+
+  @include media(660px) {
+    width: 100%;
+  }
+}
+
+.write-me-form {
+  margin-top: 31px;
+}
+
+.write-me-form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.write-me-form__label {
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.write-me-form__input,
+.write-me-form__textarea {
+  margin-bottom: 9px;
+  padding: 13px;
+  font-size: 14px;
+  color: #fff;
+  max-width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  &:focus {
+    box-shadow: 0 0 5.82px 0.18px rgba(51, 0, 51, 0.24);
+    outline: none;
+    border: none;
+  }
+}
+
+.write-me-form__textarea {
+  min-height: 104px;
+  margin-bottom: 19px;
+}
+
+.write-me-form__submit {
+  width: 100%;
+  max-width: 378px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  font-size: 14px;
+  line-height: 45px;
+  font-weight: 700;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #fff;
+    color: #1a181c;
+    cursor: pointer;
+  }
+
+  @include media(660px) {
+    display: block;
+    margin: 0 auto;
+  }
+}

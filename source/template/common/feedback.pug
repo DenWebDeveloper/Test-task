@@ -1,0 +1,28 @@
+section.feedback
+    .container
+        .feedback__wrapper
+            .contacts
+                h2.block__title Контакты
+                hr.block__line
+                p.contacts__paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt labore et dolore magna ipsum dolor aliqua.
+                a.contacts__phone(href="tel:+3805000012344")
+                    i.fas.fa-phone.contacts__fa-phone
+                    | +38 050 000 12 344
+                a.contacts__email(href="mail@demolink.org")
+                    i.fas.fa-envelope.contacts__fa-email
+                    | mail@demolink.org
+                iframe.contacts__map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370518!2d30.320889251753!3d59.93879418178733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522156517498', frameborder='0', style='border:0', allowfullscreen='')
+            .write-me
+                h2.block__title Написать мне
+                hr.block__line
+                form(action="#").write-me-form
+                    .write-me-form__group
+                        label(for="write-me-form__name").write-me-form__label Ваше имя
+                        input#write-me-form__name.write-me-form__input(name="name", required="required")
+                    .write-me-form__group
+                        label(for="write-me-form__email").write-me-form__label Почта
+                        input#write-me-form__email.write-me-form__input(name="email", required="required")
+                    .write-me-form__group
+                        label(for="write-me-form__textatea").write-me-form__label Сообщения
+                        textarea#write-me-form__textatea.write-me-form__textarea(name="message", required="required")
+                    button(type="submit").write-me-form__submit Отправить сообщение

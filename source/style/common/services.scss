@@ -1,0 +1,180 @@
+.services {
+  margin-top: 154px;
+
+  @include md() {
+    margin-top: 70px;
+  }
+}
+
+.services__line:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  top: -2px;
+  left: calc(50% - 60px);
+  background-color: #7dadd3;
+}
+
+.services__items {
+  display: flex;
+  justify-content: space-between;
+
+  @include media(900px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.services__item {
+  display: flex;
+  //padding: 0 52px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.3);
+  background: transparent top left/cover no-repeat;
+  min-height: 300px;
+  margin-bottom: 18px;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  &:hover {
+    color: #fff;
+    -webkit-background-size: 130% auto;
+    background-size: 130% auto;
+
+    &:before {
+      background-color: rgba(#406c8e,0.8);
+    }
+    .services__item-title {
+      margin-bottom: 6px;
+    }
+  }
+
+  @include media(900px) {
+    box-sizing: border-box;
+    width: 49%;
+  }
+
+  @include media(550px) {
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  }
+
+}
+
+.services-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 32.3%;
+
+  @include media(900px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include media(550px) {
+    flex-wrap: wrap;
+  }
+
+}
+
+.services__item > *:not(h3) {
+  display: none;
+}
+
+.services__item:hover > * {
+  display: block;
+  z-index: 2;
+}
+
+.services__item--portraits,
+.services__item--fashion,
+.services__item--love-story {
+  min-height: 440px;
+
+  @include media(900px) {
+    min-height: 300px;
+  }
+}
+
+.services__item--love-story {
+  background-image: url(../img/services-love-story.jpg);
+}
+
+.services__item--portraits {
+  background-image: url(../img/services-portraits.jpg);
+}
+
+.services__item--children {
+  background-image: url(../img/services-children.jpg);
+}
+
+.services__item--fashion {
+  background-image: url(../img/services-fashion.jpg);
+}
+
+.services__item--family {
+  background-image: url(../img/services-family.jpg);
+}
+
+.services__item--wedding {
+  background-image: url(../img/services-wedding.jpg);
+}
+
+.services__item-title {
+  font-size: 25px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.services__item-small {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.services__item-paragraph {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 300;
+  max-width: 274px;
+}
+
+.services__item-link {
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 50px;
+  margin-bottom: 6px;
+
+  &:hover {
+    background-color: #fff;
+    color: #1a181c;
+  }
+}
+
+.services__order-photos {
+  margin-top: 22px;
+  max-width: 242px;
+  padding-bottom: 15px;
+}

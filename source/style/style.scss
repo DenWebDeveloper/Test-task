@@ -1,0 +1,35 @@
+@import "common/media";
+@import "common/normalize";
+@import "common/swiper.min.scss";
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  color: #9da5b0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.display-hidden {
+  display: none;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@import "common/header";
+@import "common/super-duper";
+@import "common/list-card";
+
