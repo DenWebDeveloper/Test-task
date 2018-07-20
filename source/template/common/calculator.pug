@@ -1,0 +1,25 @@
+section.calculator
+    .calculator__wrapper.container
+        h2.calculator__title Cryptocurrency calculator
+        p.calculator__paragraph Don’t miss your chance to buy LTY with 40% adiscount!
+        form.calculator-form(name="calculator" action)
+            .calculator-form__row
+                span.calculator-form__text.calculator-form--left-text You invest:
+                .calculator-form__column
+                    span.calculator-form__text  from
+                    .calculator-form__input-title Ethereum (ETH)
+                    input#js-calculator-input.calculator-form__input(name="ethereum", type="text", value="1")
+                .calculator-form__column
+                    span.calculator-form__text  to
+                    .calculator-form__input-title US Dollar (USD)
+                    .calculator-form__input-title#js-calculator-to $ 852
+            .calculator-form__row
+                span.calculator-form__text.calculator-form--left-text.calculator-form--get You get:
+                #js-calculator-result.calculator-form__input-title.calculator-form__input--result 892 LTY tokens + 892 x 40% bonus = 1338 LTY
+                a.calculator-form__buy.btn(href="#") Buy
+            .calculator-form__row
+                span.calculator-form__text.calculator-form--left-text.calculator-form--address-text Crowdsale address:
+                .calculator-form__column
+                    .calculator-form__input-title.calculator-form__input--address 0x86Fa0497284E38197D364927eb3B78Cfdv0Ch927
+                    a.calculator-form__how-to-insert(href="#") How to invest ?
+                a.calculator-form__copy.btn#js-calculator-copy(href="#") Copy

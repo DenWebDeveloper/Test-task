@@ -1,11 +1,17 @@
-@import "common/media";
 @import "common/normalize";
-@import "common/swiper.min.scss";
+@import "common/fonts";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 body {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  color: #9da5b0;
+  font-size: 16px;
+  font-family: "Circe", "Arial", sans-serif;
 }
 
 ul {
@@ -14,22 +20,23 @@ ul {
   list-style: none;
 }
 
+
+a:hover {
+  cursor: pointer;
+}
+
 img {
   height: auto;
   max-width: 100%;
 }
 
-.display-hidden {
-  display: none;
-}
-
 .container {
-  max-width: 1180px;
-  padding: 0 10px;
+  max-width: 1171px;
   margin: 0 auto;
 }
 
 @import "common/header";
-@import "common/super-duper";
-@import "common/list-card";
-
+@import "common/calculator";
+@import "common/roadmap";
+@import "common/swiper";
+@import "common/roadmap-slider";

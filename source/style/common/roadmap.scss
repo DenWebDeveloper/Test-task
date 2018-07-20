@@ -1,0 +1,91 @@
+.roadmap {
+  background: url(../img/roadmap.svg) center center;
+}
+
+.roadmap__wrapper {
+  padding-top: 86px;
+}
+
+.roadmap__phantom {
+  z-index: 9;
+  position: relative;
+
+  text-align: center;
+  text-transform: uppercase;
+  bottom: 0;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 57px;
+  font-weight: 800;
+  opacity: 0.04;
+  letter-spacing: -2.7px;
+  color: #000000;
+}
+
+.roadmap__title {
+  top: -32px;
+  margin: 0;
+  color: #316fdf;
+  font-weight: 500;
+  font-size: 35px;
+  z-index: 10;
+  position: relative;
+  text-align: center;
+  letter-spacing: normal;
+}
+
+.timer__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.timer__text {
+  margin-top: 1px;
+  margin-bottom: 4px;
+  line-height: 1.44;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #316fdf;
+}
+
+.timer__count {
+  font-size: 30px;
+  color: #316fdf;
+  font-weight: 400;
+  text-align: center;
+  width: 35px;
+  margin: 0 13px;
+  position: relative;
+
+  &:after {
+    content: ":";
+    font-size: 33px;
+    color: #316fdf;
+    position: absolute;
+    bottom: 1px;
+    right: -16px;
+  }
+
+  &:last-child:after {
+    content: none;
+  }
+
+  &:before {
+    content: "days";
+    font-size: 12px;
+    color: #316fdf;
+    position: absolute;
+    bottom: -14px;
+  }
+}
+
+.timer__count--hours:before {
+  content: "hours";
+}
+
+.timer__count--minutes:before {
+  content: "minutes";
+}
+
+.timer__count--seconds:before {
+  content: "seconds";
+}
